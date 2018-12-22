@@ -1,0 +1,140 @@
+:root {
+    --main-theme-color: #005999; 
+    --main-heading-font:'Raleway', sans-serif;
+    --main-heading-size:40px;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
+body
+{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+/*Refer Form Page*/
+.Background_image
+{
+    background-image: url(./assets/img/Landing.png);
+    min-height: 80vh;
+    width: 100%;
+    
+    -webkit-min-height: 80vh; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -moz-min-height: 80vh; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+.nav_align
+{
+    /*position: absolute;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;*/
+    background-color: var(--main-theme-color);
+}
+.icon-bar
+{
+    background-color: white;
+   
+}
+.nav_list 
+{
+    margin-top: 1.5%;
+}
+ ul li a
+{
+    color: white;
+    font-family: var(--main-heading-font);
+}
+.nav>li>a:focus, .nav>li>a:hover 
+{
+    text-decoration: none;
+    background-color: transparent !important;
+   color: #549CE0;
+}
+.footer
+{
+    margin-top: -1.5%;
+    text-align: center;
+   
+}
+.refer_heading
+{
+    margin-top: 9vh;
+    color: var(--main-theme-color);
+    font-family: var(--main-heading-font);
+    font-size: var(--main-heading-size);
+    overflow: hidden;
+}
+.refer_table
+{
+    margin-top: 9vh;
+    
+}
+.refer_table-input tr td
+{
+    border-bottom:1px solid #005999;
+}
+.Input-top-row
+{
+    background-color:rgba(0,0,0,0) !important;
+    border-top:none !important;
+}
+.Input_row
+{
+    border-right: 1px solid #005999;
+    line-height: 10%;
+    background-color:rgba(0,0,0,0) !important;
+    border-top:none !important;
+    color: var(--main-theme-color);
+    font-family: var(--main-heading-font);
+}
+.transparent-input
+{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+    border: 0%;
+    box-shadow: none;
+}
+.transparent-input:focus{
+    border-color:none;
+    outline:0;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.refer-btn
+{
+        text-align: center;
+        font-size: 15px;
+        background-color: rgba(0,0,0,0);
+        margin-left: 1%;
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+        border: 1px solid var(--main-theme-color);
+}
+/*Refer form media query*/
+@media screen and (min-width:320px) and (max-width:787px)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    .refer_heading{
+        margin-top: 2vh;
+    }
+    .refer_table
+{
+    margin-top: 1vh;
+}
+.refer-btn
+{
+    text-align: center;
+    margin-left: 40%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+}
+/*Refer Form Page End*/

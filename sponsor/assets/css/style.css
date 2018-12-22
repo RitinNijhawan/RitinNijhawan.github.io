@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    
+    
+}
+/* Home Page Start*/
+.home_image
+{
+    background: url('../img/Landing.png')  ;
+    background-size: cover;
+    background-clip: border-box;
+    height: 96vh;
+}
+.footer-align
+{
+    
+    position: absolute;
+    bottom: 4%;
+    left: 0%;
+    right: 0%;
+    background-color: #005999;
+}.nav-list li a
+{
+    color: white;
+}
+
+/* Home Page End*/
+
+/*About Page start*/
+.About_image
+{
+    background: url('../img/vision.png')  ;
+    background-size: cover;
+    height: 96vh;
+    max-height: auto;
+}
+
+
+
+
+
+
+
+
+
+/*About page End*/
+
+/*refer form page*/
+.refer_image
+{
+    background: url('../img/Landing.png')  ;
+   
+    height: 80vh;
+}
+
+
+
+
+
+
+
+/*refer form page end*/

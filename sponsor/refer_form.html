@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <div class="Background_image clearfix">
+
+        <div class="row">
+            <div class="container">
+                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-12">
+                    <form method="POST" action="form-handler" onsubmit="return validate();" name="Refer1">
+                        <h2 class="refer_heading">Refer someone</h2>
+                        <table class="table table-condensed refer_table">
+
+                            <tbody class="refer_table-input">
+                                <tr>
+                                    <td class="Input_row"><label for="usr">Name*</label></td>
+
+                                    <td class="Input-top-row shadow-none p-3 mb-5 bg-light rounded"><input type="text"
+                                            class="form-control transparent-input" id="First" placeholder="First"></td>
+                                    <td class="Input-top-row">
+                                        <input type="text" class="form-control transparent-input" id="Middle"
+                                            placeholder="Middle"></td>
+                                    <td class="Input-top-row">
+                                        <input type="text" class="form-control transparent-input" id="Last" placeholder="Last"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="Input_row"><label for="usr">Email</label></td>
+
+                                    <td colspan="3"><input type="text" class="form-control transparent-input" id="email"></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td class="Input_row"><label for="usr">Contact*</label></td>
+
+                                    <td colspan="3"><input type="text" class="form-control transparent-input" id="mob"></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="Input_row"><label for="usr">Message*</label></td>
+
+                                    <td colspan="3"><input type="text" class="form-control transparent-input" id="Msg"></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-12">
+                    <h2 class="refer_heading">Referred by</h2>
+                    <table class="table table-condensed refer_table">
+
+                        <tbody class="refer_table-input">
+                            <tr>
+                                <td class="Input_row"><label for="usr">Name*</label></td>
+
+                                <td class="Input-top-row"><input type="text" class="form-control transparent-input" id="First"
+                                        placeholder="First"></td>
+                                <td class="Input-top-row">
+                                    <input type="text" class="form-control transparent-input" id="Middle" placeholder="Middle"></td>
+                                <td class="Input-top-row">
+                                    <input type="text" class="form-control transparent-input" id="Last" placeholder="Last"></td>
+
+                            </tr>
+                            <tr>
+                                <td class="Input_row"><label for="usr">Email</label></td>
+
+                                <td colspan="3"><input type="text" class="form-control transparent-input" id="email"></td>
+
+
+                            </tr>
+                            <tr>
+                                <td class="Input_row"><label for="usr">Contact*</label></td>
+
+                                <td colspan="3"><input type="text" class="form-control transparent-input" id="mob"></td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <button type="submit" class="btn btn-default refer-btn">Refer</button>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <nav class="navbar nav_align navbar-bottom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="./assets/img/logo.png" height="90px" width="220px">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav navbar-right nav_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Get involved</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+      
+    </nav>
+    <div class="container footer ">
+    <p >Designed by <a href="http://whynine.co/" target="_blank">WhyNine</a> | Built and Maintained by <a href="http://www.foundlay.com "
+        target="_blank">Foundlay</a></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner {
+    background-image: url('wall.jpeg');
+    width: 100%;
+    min-height: 600px;
+    max-height: auto;
+    color: white;
+}
+
+.heading1 {
+    margin-left: 4%;
+    margin-top: 14%;
+}
+
+.para-1 {
+    margin-left: 4%;
+}
+
+.play-icon {
+    font-size: 30px;
+    padding-left: 4%;
+}
+
+.Sub-h3 {
+    text-transform: uppercase;
+    margin-top: 25%;
+    font-weight: bolder;
+}
+
+.sub-p {
+    text-align: justify;
+}
+
+.sub-pic {
+    height: 300px;
+    width: 100%;
+    margin-top: 11%;
+}
+
+.about-cont {
+    background-color: #F6E9E9;
+    min-height: 600px;
+    max-height: auto;
+    width: 100%;
+}
+
+.about-h4 {
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-top: 10%;
+}
+
+.about-p {
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.event-p2 {
+    text-align: cjustify;
+}
+
+.event-p1 {
+    text-align: justify;
+}
+
+.wrapper-img {
+    height: 250px;
+    width: 100%;
+}
+
+@media only screen and (max-width:375px) {
+    .collapse.navbar-collapse {
+        background-color: #23b574;
+    }
+    ul li {
+        color: black;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:414px) {
+    .about-p {
+        text-align: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .about-h4 {
+        text-align: center;
+        font-weight: 100;
+        text-transform: uppercase;
+        padding-top: 12%;
+        font-size: 30px;
+        text-decoration-line: unset;
+    }
+    .heading1 {
+        margin-top: 18%;
+    }
+}

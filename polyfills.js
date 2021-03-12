@@ -3033,7 +3033,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/god/Documents/Sourcecode Project/SourceCode Admin:Client Panel/SourcecodeCllent/src/polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! /Users/god/Documents/Sourcecode Project/SourceCode Admin:Client Panel/SourcecodePanel/src/polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })

@@ -1508,6 +1508,7 @@ class AdminHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
+        console.log(window.location.href);
         if (window.location.href == this.origin + "/") {
             this.dashboard = true;
             this.UserPanel = false;

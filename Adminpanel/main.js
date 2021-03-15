@@ -1508,26 +1508,25 @@ class AdminHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        console.log(window.location.href);
-        if (window.location.href == this.origin + "/") {
+        if (window.location.href.includes("Adminpanel/#/") == true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;
             this.logo = false;
         }
-        if (window.location.href == this.origin + "/UserPanel") {
+        if (window.location.href.includes("/UserPanel") == true) {
             this.dashboard = false;
             this.UserPanel = true;
             this.Archieve = false;
             this.logo = false;
         }
-        if (window.location.href == this.origin + "/Archieve") {
+        if (window.location.href.includes("/Archieve") == true) {
             this.dashboard = false;
             this.UserPanel = false;
             this.Archieve = true;
             this.logo = false;
         }
-        if (window.location.href != this.origin + "/" && window.location.href != this.origin + "/UserPanel" && window.location.href != this.origin + "/Archieve") {
+        if (window.location.href.includes("Adminpanel/#/") != true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true) {
             this.logo = true;
             this.dashboard = false;
             this.UserPanel = true;
@@ -5110,22 +5109,22 @@ class MobileHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        if (window.location.href == this.origin + "/") {
+        if (window.location.href.includes("Adminpanel/#/") == true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;
         }
-        if (window.location.href == this.origin + "/UserPanel") {
+        if (window.location.href.includes("UserPanel") == true) {
             this.dashboard = false;
             this.UserPanel = true;
             this.Archieve = false;
         }
-        if (window.location.href == this.origin + "/Archieve") {
+        if (window.location.href.includes("Archieve") == true) {
             this.dashboard = false;
             this.UserPanel = false;
             this.Archieve = true;
         }
-        if (window.location.href != this.origin + "/" && window.location.href != this.origin + "/UserPanel" && window.location.href != this.origin + "/Archieve") {
+        if (window.location.href.includes("Adminpanel/#/") != true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true) {
             this.dashboard = false;
             this.UserPanel = true;
             this.Archieve = false;

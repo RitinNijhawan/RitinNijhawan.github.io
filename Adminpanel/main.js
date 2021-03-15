@@ -1508,25 +1508,25 @@ class AdminHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        if (window.location.href.includes("Adminpanel/#/") == true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true) {
+        if (window.location.hash.includes("Adminpanel/#/") == true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;
             this.logo = false;
         }
-        if (window.location.href.includes("/UserPanel") == true) {
+        if (window.location.hash.includes("/UserPanel") == true) {
             this.dashboard = false;
             this.UserPanel = true;
             this.Archieve = false;
             this.logo = false;
         }
-        if (window.location.href.includes("/Archieve") == true) {
+        if (window.location.hash.includes("/Archieve") == true) {
             this.dashboard = false;
             this.UserPanel = false;
             this.Archieve = true;
             this.logo = false;
         }
-        if (window.location.href.includes("Adminpanel/#/") != true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true) {
+        if (window.location.hash.includes("Adminpanel/#/") != true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
             this.logo = true;
             this.dashboard = false;
             this.UserPanel = true;
@@ -5109,22 +5109,22 @@ class MobileHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        if (window.location.href.includes("Adminpanel/#/") == true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true && window.location.href.includes("UserDetail") != true) {
+        if (window.location.hash.includes("Adminpanel/#/") == true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true && window.location.hash.includes("UserDetail") != true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;
         }
-        if (window.location.href.includes("UserPanel") == true) {
+        if (window.location.hash.includes("UserPanel") == true) {
             this.dashboard = false;
             this.UserPanel = true;
             this.Archieve = false;
         }
-        if (window.location.href.includes("Archieve") == true) {
+        if (window.location.hash.includes("Archieve") == true) {
             this.dashboard = false;
             this.UserPanel = false;
             this.Archieve = true;
         }
-        if (window.location.href.includes("Adminpanel/#/") != true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true) {
+        if (window.location.hash.includes("Adminpanel/#/") != true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
             this.dashboard = false;
             this.UserPanel = true;
             this.Archieve = false;
@@ -12020,7 +12020,6 @@ class UserDetailComponent {
     }
     ngOnInit() {
         const lastItem = window.location.pathname.substring(window.location.pathname.lastIndexOf('/#/') + 1);
-        console.log(window.location.hash);
         document.getElementById("Detail").style.background = "white";
         document.getElementById("timeline").style.background = "#E8E8E8";
         document.getElementById("tickets").style.background = "#E8E8E8";

@@ -1508,7 +1508,7 @@ class AdminHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        if (window.location.hash.includes("Adminpanel/#/") == true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
+        if (window.location.hash == "#/" && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;
@@ -1526,7 +1526,7 @@ class AdminHeaderComponent {
             this.Archieve = true;
             this.logo = false;
         }
-        if (window.location.hash.includes("Adminpanel/#/") != true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
+        if (window.location.hash != "#/" && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
             this.logo = true;
             this.dashboard = false;
             this.UserPanel = true;
@@ -5109,7 +5109,8 @@ class MobileHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        if (window.location.hash.includes("Adminpanel/#/") == true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true && window.location.hash.includes("UserDetail") != true) {
+        console.log(window.location);
+        if (window.location.hash == "#/" && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;
@@ -5124,7 +5125,7 @@ class MobileHeaderComponent {
             this.UserPanel = false;
             this.Archieve = true;
         }
-        if (window.location.hash.includes("Adminpanel/#/") != true && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
+        if (window.location.hash != "#/" && window.location.hash.includes("/UserPanel") != true && window.location.hash.includes("/Archieve") != true) {
             this.dashboard = false;
             this.UserPanel = true;
             this.Archieve = false;

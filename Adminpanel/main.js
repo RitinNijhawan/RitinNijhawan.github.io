@@ -1508,7 +1508,7 @@ class AdminHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        if (window.location.href.includes("Adminpanel/#/") == true) {
+        if (window.location.href.includes("Adminpanel/#/") == true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;
@@ -5109,7 +5109,7 @@ class MobileHeaderComponent {
     }
     ngOnInit() {
         this.origin = window.location.origin + "/#";
-        if (window.location.href.includes("Adminpanel/#/") == true) {
+        if (window.location.href.includes("Adminpanel/#/") == true && window.location.href.includes("/UserPanel") != true && window.location.href.includes("/Archieve") != true) {
             this.dashboard = true;
             this.UserPanel = false;
             this.Archieve = false;

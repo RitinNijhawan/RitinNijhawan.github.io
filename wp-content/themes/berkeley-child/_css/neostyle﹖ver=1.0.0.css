@@ -1,0 +1,277 @@
+/* ***********************************************************
+## COLORS
+*********************************************************** */
+/* ***********************************************************
+## COLORS
+*********************************************************** */
+/* set up colors that will be used over and over again, in RGBA, A ommitted so that it can be set as needed but maintain base color */
+/* ******************************************************** */
+/* ***********************************************************
+## FONTS
+*********************************************************** */
+/* ***********************************************************
+## FONTS
+*********************************************************** */
+/* ******************************************************** */
+/* ***********************************************************
+## FUNCTIONS
+*********************************************************** */
+/* The font will be at the preferred size on 1000 pixel wide viewports by default. */
+.neow3hide {
+  display: none;
+  visibility: hidden;
+  overflow: initial;
+}
+
+img.lazy {
+  display: block;
+}
+
+/* ******************************************************** */
+/* ***********************************************************
+## PROJECT SPECIFIC STYLES
+*********************************************************** */
+.mfp-arrow:after {
+  width: 100%;
+  height: 100%;
+}
+
+.mfp-arrow-left:after {
+  left: 0;
+}
+
+.neo_nav li {
+  overflow: hidden;
+}
+.neo_nav li a {
+  z-index: 10;
+}
+.neo_nav li:after, .neo_nav li img {
+  height: 102vh;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  min-width: 100%;
+  -webkit-transition: all 0.44s ease-in;
+  -moz-transition: all 0.44s ease-in;
+  -ms-transition: all 0.44s ease-in;
+  -o-transition: all 0.44s ease-in;
+  transition: all 0.44s ease-in;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.neo_nav li:after {
+  content: "";
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+.neo_nav li img {
+  z-index: 0;
+  object-fit: cover;
+}
+.neo_nav li:hover:after {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.neo_nav li:hover img {
+  -webkit-transition: transform 0.34s ease-in;
+  -moz-transition: transform 0.34s ease-in;
+  -ms-transition: transform 0.34s ease-in;
+  -o-transition: transform 0.34s ease-in;
+  transition: transform 0.34s ease-in;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.neo__privacy > div {
+  padding: calc(2vw + 25px) 0 calc(2vw + 25px) 10%;
+  width: 90%;
+  margin: 0 auto;
+}
+.neo__privacy > div p {
+  display: block;
+  margin: 0 0 20px 0;
+}
+.neo__privacy > div h4 {
+  display: block;
+  margin: calc(1vw + 25px) 0 5px 0;
+}
+
+/* ***********************************************************
+## FEATURED PORTFOLIO LAYOUT
+*********************************************************** */
+/* ***********************************************************
+## FEATURED NEWS LAYOUT
+*********************************************************** */
+@media screen and (max-width: 1480px) {
+  .neo__header .neo_caption {
+    background-position: 0 -10vw;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .neo__header .neo_caption {
+    background-position: 0 -9vw;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 960px) {
+  .neo__header .neo_caption {
+    background-position: 0 -6vw;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 720px) {
+  .neo__header .neo_caption {
+    background-position: 0 -5vw;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 720px) {
+  .neo__header .neo_caption {
+    background-position: 0 -6vw;
+    background-repeat: no-repeat;
+  }
+}
+
+#wpadminbar {
+  display: none;
+}
+
+/* ***********************************************************
+## LOAD
+*********************************************************** */
+/* ***********************************************************
+## LOAD SASS LIBRARIES
+*********************************************************** */
+/* ******************************************************** */
+/* ***********************************************************
+## LARGE SCREENS
+*********************************************************** */
+@media screen and (max-height: 960px) and (min-width: 1480px) {
+  /* ***********************************************************
+  ## SPLASH PAGE LAYOUT
+  *********************************************************** */
+  .neo__404,
+  .neo__splash {
+    height: 960px;
+    max-height: 960px;
+    position: relative;
+  }
+  .neo__404 > div figure,
+  .neo__splash > div figure {
+    height: 960px;
+  }
+}
+@media screen and (max-height: 720px) and (min-width: 1480px) {
+  section.neo__hero div.neo_logo {
+    top: 50vh;
+  }
+}
+@media screen and (max-height: 960px) and (max-width: 1480px) {
+  /* ***********************************************************
+  ## SPLASH PAGE LAYOUT
+  *********************************************************** */
+  .neo__404,
+  .neo__splash {
+    height: 960px;
+    max-height: 960px;
+    position: relative;
+  }
+  .neo__404 > div figure,
+  .neo__splash > div figure {
+    height: 960px;
+  }
+}
+@media screen and (max-height: 720px) and (max-width: 1480px) {
+  section.neo__hero div.neo_logo {
+    top: 50vh;
+  }
+}
+/* ******************************************************** */
+/* ***********************************************************
+## MEDIUM SCREENS
+*********************************************************** */
+/* ******************************************************** */
+/* ***********************************************************
+## SMALL SCREENS
+*********************************************************** */
+@media screen and (max-width: 640px) {
+  .neo__header > div {
+    min-height: 150vw;
+  }
+  .neo__header > div figure img {
+    min-height: 150vw;
+  }
+
+  .neo__header .neo_caption {
+    height: 40vw;
+    left: 5%;
+  }
+  .neo__header .neo_caption b {
+    padding: 0 0 0 6%;
+  }
+
+  /* ***********************************************************
+  ## SPLASH PAGE LAYOUT
+  *********************************************************** */
+  .neo__404,
+  .neo__splash {
+    height: 650px;
+    max-height: 650px;
+    position: relative;
+  }
+  .neo__404 > div figure,
+  .neo__splash > div figure {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .neo__header .neo_caption {
+    background-position: 0 -4vw;
+    background-repeat: no-repeat;
+  }
+  .neo__header .neo_caption strong {
+    font-size: 3vw;
+  }
+  .neo__header .neo_caption h1, .neo__header .neo_caption b {
+    font-size: 7vw;
+  }
+
+  section {
+    overflow: hidden;
+  }
+
+  footer > div > div._top > div:nth-of-type(1) li {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .neo__splash > div h1,
+  .neo__404 > div h1 {
+    font-size: 26px;
+  }
+}
+/* Landscape */
+/* ******************************************************** */
